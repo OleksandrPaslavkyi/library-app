@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #fefefe; /* Background color to match other pages */
+    background-color: #fefefe; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -11,7 +11,7 @@
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Text color to match other pages */
+    color: #333; 
 }
 
 ul {
@@ -31,23 +31,21 @@ li {
 li .book-info {
     flex-grow: 1;
     display: flex;
-    flex-direction: column; /* Aligns title and author vertically */
-    justify-content: center; /* Centers the content */
+    flex-direction: column;
+    justify-content: center; 
 }
 
 li .book-info strong {
-    margin-bottom: 5px; /* Adds space between title and author */
+    margin-bottom: 5px; 
 }
 
 li .btn-group {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    margin-left: 20px; /* Adds space between the book info and the buttons */
+    margin-left: 20px; 
 }
 
-
-/* Default button style */
 .btn {
     text-decoration: none;
     padding: 8px 12px;
@@ -56,27 +54,25 @@ li .btn-group {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Edit Button: Yellow */
 .btn.btn-edit {
-    background-color: #ffeb3b; /* Yellow */
+    background-color: #ffeb3b;
     color: black;
 }
 
-/* Delete Button: Red */
+
 .btn.btn-delete {
-    background-color: #f44336; /* Red */
+    background-color: #f44336; 
     color: white;
 }
 
-/* Details Button: Blue */
+
 .btn.btn-details {
-    background-color: #2196f3; /* Blue */
+    background-color: #2196f3;
     color: white;
 }
 
-/* Add Button: Green */
 .btn.btn-add {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50; 
     color: white;
     display: block;
     text-align: center;
@@ -84,7 +80,6 @@ li .btn-group {
     width: 150px;
 }
 
-/* Hover effect for buttons */
 .btn:hover {
     transform: scale(1.05);
 }
