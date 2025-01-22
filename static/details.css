@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #fefefe; /* Background color to match other pages */
+    background-color: #fefefe; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -11,7 +11,7 @@
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Text color to match other pages */
+    color: #333; 
 }
 
 ul {
@@ -29,10 +29,9 @@ li {
 
 li strong {
     font-weight: bold;
-    color: #333; /* Ensures text color matches */
+    color: #333; 
 }
 
-/* Default button style */
 .btn {
     text-decoration: none;
     padding: 8px 12px;
@@ -41,14 +40,13 @@ li strong {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Specific button color updates */
 .btn-edit {
-    background-color: #ffeb3b; /* Yellow */
+    background-color: #ffeb3b; 
     color: black;
 }
 
 .btn-delete {
-    background-color: #f44336; /* Red */
+    background-color: #f44336; 
     color: white;
 }
 
@@ -63,20 +61,18 @@ li strong {
     width: 150px;
 }
 
-/* Back to Booklist button */
 .btn-back {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50; 
     color: white;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
-    margin-top: 20px;  /* Space above the button */
+    margin-top: 20px;  
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect for the Back button */
 .btn-back:hover {
     transform: scale(1.05);
 }
