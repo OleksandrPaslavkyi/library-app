@@ -7,7 +7,6 @@ app = Flask(__name__, template_folder='templates')
 def get_db_connection():
     return pyodbc.connect(Config.AZURE_DATABASE_CONNECTION)
 
-# Route for displaying the list of books
 @app.route('/')
 def index():
     connection = get_db_connection()
@@ -18,7 +17,6 @@ def index():
     connection.close()
     return render_template('index.html', books=books)
 
-# Route for adding a new book
 @app.route('/add', methods=['GET', 'POST'])
 def add_book():
     if request.method == 'POST':
@@ -40,7 +38,6 @@ def add_book():
         return redirect(url_for('index'))
     return render_template('add_book.html')
 
-# Route for editing an existing book
 @app.route('/edit/<int:book_id>', methods=['GET', 'POST'])
 def edit_book(book_id):
     connection = get_db_connection()
@@ -73,7 +70,6 @@ def edit_book(book_id):
 
     return render_template('edit_book.html', book=book)
 
-# Route for deleting a book
 @app.route('/delete/<int:book_id>', methods=['GET'])
 def delete_book(book_id):
     connection = get_db_connection()
@@ -84,7 +80,6 @@ def delete_book(book_id):
     connection.close()
     return redirect(url_for('index'))
 
-# Route for displaying book details
 @app.route('/book/<int:book_id>')
 def book_details(book_id):
     connection = get_db_connection()
