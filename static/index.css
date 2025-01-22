@@ -1,0 +1,91 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe; /* Background color to match other pages */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Text color to match other pages */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+li .book-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Aligns title and author vertically */
+    justify-content: center; /* Centers the content */
+}
+
+li .book-info strong {
+    margin-bottom: 5px; /* Adds space between title and author */
+}
+
+li .btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-left: 20px; /* Adds space between the book info and the buttons */
+}
+
+
+/* Default button style */
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit Button: Yellow */
+.btn.btn-edit {
+    background-color: #ffeb3b; /* Yellow */
+    color: black;
+}
+
+/* Delete Button: Red */
+.btn.btn-delete {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Details Button: Blue */
+.btn.btn-details {
+    background-color: #2196f3; /* Blue */
+    color: white;
+}
+
+/* Add Button: Green */
+.btn.btn-add {
+    background-color: #4caf50; /* Green */
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    width: 150px;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    transform: scale(1.05);
+}
+
