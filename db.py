@@ -5,7 +5,6 @@ def create_database():
     connection = pyodbc.connect(Config.AZURE_DATABASE_CONNECTION)
     cursor = connection.cursor()
 
-    # Check if the table exists before creating it
     check_table_query = """
     IF NOT EXISTS (
         SELECT * FROM sysobjects 
@@ -20,8 +19,6 @@ def create_database():
         genre NVARCHAR(50)
     )
     """
-
-    # Execute the query
     cursor.execute(check_table_query)
     connection.commit()
     cursor.close()
